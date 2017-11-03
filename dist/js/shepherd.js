@@ -282,7 +282,7 @@ var Step = (function (_Evented) {
       }
 
       var tetherOpts = {
-        classPrefix: 'shepherd',
+        classPrefix: 'docsify-shepherd',
         element: this.el,
         constraints: [{
           to: 'window',

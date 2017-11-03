@@ -1,22 +1,22 @@
-.shepherd-element-attached-bottom.shepherd-element-attached-right.shepherd-target-attached-top.shepherd-target-attached-left .shepherd-content:before,
-.shepherd-element-attached-bottom.shepherd-element-attached-left.shepherd-target-attached-top.shepherd-target-attached-right .shepherd-content:before,
-.shepherd-element-attached-top.shepherd-element-attached-right.shepherd-target-attached-bottom.shepherd-target-attached-left .shepherd-content:before,
-.shepherd-element-attached-top.shepherd-element-attached-left.shepherd-target-attached-bottom.shepherd-target-attached-right .shepherd-content:before {
+.docsify-shepherd-element-attached-bottom.docsify-shepherd-element-attached-right.docsify-shepherd-target-attached-top.docsify-shepherd-target-attached-left .docsify-shepherd-content:before,
+.docsify-shepherd-element-attached-bottom.docsify-shepherd-element-attached-left.docsify-shepherd-target-attached-top.docsify-shepherd-target-attached-right .docsify-shepherd-content:before,
+.docsify-shepherd-element-attached-top.docsify-shepherd-element-attached-right.docsify-shepherd-target-attached-bottom.docsify-shepherd-target-attached-left .docsify-shepherd-content:before,
+.docsify-shepherd-element-attached-top.docsify-shepherd-element-attached-left.docsify-shepherd-target-attached-bottom.docsify-shepherd-target-attached-right .docsify-shepherd-content:before {
   display: none; }
 
-.shepherd-element, .shepherd-element:after, .shepherd-element:before, .shepherd-element *, .shepherd-element *:after, .shepherd-element *:before {
+.docsify-shepherd-element, .docsify-shepherd-element:after, .docsify-shepherd-element:before, .docsify-shepherd-element *, .docsify-shepherd-element *:after, .docsify-shepherd-element *:before {
   box-sizing: border-box; }
 
-.shepherd-element {
+.docsify-shepherd-element {
   position: absolute;
   display: none; }
-  .shepherd-element.shepherd-open {
+  .docsify-shepherd-element.docsify-shepherd-open {
     display: block; }
 
-.shepherd-element.shepherd-theme-default {
+.docsify-shepherd-element.docsify-shepherd-theme-default {
   max-width: 100%;
   max-height: 100%; }
-  .shepherd-element.shepherd-theme-default .shepherd-content {
+  .docsify-shepherd-element.docsify-shepherd-theme-default .docsify-shepherd-content {
     border-radius: 5px;
     position: relative;
     font-family: inherit;
@@ -25,7 +25,7 @@
     padding: 1em;
     font-size: 1.1em;
     line-height: 1.5em; }
-    .shepherd-element.shepherd-theme-default .shepherd-content:before {
+    .docsify-shepherd-element.docsify-shepherd-theme-default .docsify-shepherd-content:before {
       content: "";
       display: block;
       position: absolute;
@@ -35,142 +35,158 @@
       border-width: 16px;
       border-style: solid;
       pointer-events: none; }
-  .shepherd-element.shepherd-theme-default.shepherd-element-attached-bottom.shepherd-element-attached-center .shepherd-content {
+  .docsify-shepherd-element.docsify-shepherd-theme-default.docsify-shepherd-element-attached-bottom.docsify-shepherd-element-attached-center .docsify-shepherd-content {
     margin-bottom: 16px; }
-    .shepherd-element.shepherd-theme-default.shepherd-element-attached-bottom.shepherd-element-attached-center .shepherd-content:before {
+    .docsify-shepherd-element.docsify-shepherd-theme-default.docsify-shepherd-element-attached-bottom.docsify-shepherd-element-attached-center .docsify-shepherd-content:before {
       top: 100%;
       left: 50%;
       margin-left: -16px;
-      border-top-color: #f6f6f6; }
-  .shepherd-element.shepherd-theme-default.shepherd-element-attached-top.shepherd-element-attached-center .shepherd-content {
+      border-top-color: #f6f6f6;
+      border-bottom: 0; }
+  .docsify-shepherd-element.docsify-shepherd-theme-default.docsify-shepherd-element-attached-top.docsify-shepherd-element-attached-center .docsify-shepherd-content {
     margin-top: 16px; }
-    .shepherd-element.shepherd-theme-default.shepherd-element-attached-top.shepherd-element-attached-center .shepherd-content:before {
+    .docsify-shepherd-element.docsify-shepherd-theme-default.docsify-shepherd-element-attached-top.docsify-shepherd-element-attached-center .docsify-shepherd-content:before {
       bottom: 100%;
       left: 50%;
       margin-left: -16px;
-      border-bottom-color: #f6f6f6; }
-  .shepherd-element.shepherd-theme-default.shepherd-element-attached-right.shepherd-element-attached-middle .shepherd-content {
+      border-bottom-color: #f6f6f6;
+      border-top: 0; }
+  .docsify-shepherd-element.docsify-shepherd-theme-default.docsify-shepherd-element-attached-right.docsify-shepherd-element-attached-middle .docsify-shepherd-content {
     margin-right: 16px; }
-    .shepherd-element.shepherd-theme-default.shepherd-element-attached-right.shepherd-element-attached-middle .shepherd-content:before {
+    .docsify-shepherd-element.docsify-shepherd-theme-default.docsify-shepherd-element-attached-right.docsify-shepherd-element-attached-middle .docsify-shepherd-content:before {
       left: 100%;
       top: 50%;
       margin-top: -16px;
-      border-left-color: #f6f6f6; }
-  .shepherd-element.shepherd-theme-default.shepherd-element-attached-left.shepherd-element-attached-middle .shepherd-content {
+      border-left-color: #f6f6f6;
+      border-right: 0; }
+  .docsify-shepherd-element.docsify-shepherd-theme-default.docsify-shepherd-element-attached-left.docsify-shepherd-element-attached-middle .docsify-shepherd-content {
     margin-left: 16px; }
-    .shepherd-element.shepherd-theme-default.shepherd-element-attached-left.shepherd-element-attached-middle .shepherd-content:before {
+    .docsify-shepherd-element.docsify-shepherd-theme-default.docsify-shepherd-element-attached-left.docsify-shepherd-element-attached-middle .docsify-shepherd-content:before {
       right: 100%;
       top: 50%;
       margin-top: -16px;
-      border-right-color: #f6f6f6; }
-  .shepherd-element.shepherd-theme-default.shepherd-element-attached-left.shepherd-target-attached-center .shepherd-content {
+      border-right-color: #f6f6f6;
+      border-left: 0; }
+  .docsify-shepherd-element.docsify-shepherd-theme-default.docsify-shepherd-element-attached-left.docsify-shepherd-target-attached-center .docsify-shepherd-content {
     left: -32px; }
-  .shepherd-element.shepherd-theme-default.shepherd-element-attached-right.shepherd-target-attached-center .shepherd-content {
+  .docsify-shepherd-element.docsify-shepherd-theme-default.docsify-shepherd-element-attached-right.docsify-shepherd-target-attached-center .docsify-shepherd-content {
     left: 32px; }
-  .shepherd-element.shepherd-theme-default.shepherd-element-attached-top.shepherd-element-attached-left.shepherd-target-attached-middle .shepherd-content {
+  .docsify-shepherd-element.docsify-shepherd-theme-default.docsify-shepherd-element-attached-top.docsify-shepherd-element-attached-left.docsify-shepherd-target-attached-middle .docsify-shepherd-content {
     margin-top: 16px; }
-    .shepherd-element.shepherd-theme-default.shepherd-element-attached-top.shepherd-element-attached-left.shepherd-target-attached-middle .shepherd-content:before {
+    .docsify-shepherd-element.docsify-shepherd-theme-default.docsify-shepherd-element-attached-top.docsify-shepherd-element-attached-left.docsify-shepherd-target-attached-middle .docsify-shepherd-content:before {
       bottom: 100%;
       left: 16px;
-      border-bottom-color: #f6f6f6; }
-  .shepherd-element.shepherd-theme-default.shepherd-element-attached-top.shepherd-element-attached-right.shepherd-target-attached-middle .shepherd-content {
+      border-bottom-color: #f6f6f6;
+      border-top: 0; }
+  .docsify-shepherd-element.docsify-shepherd-theme-default.docsify-shepherd-element-attached-top.docsify-shepherd-element-attached-right.docsify-shepherd-target-attached-middle .docsify-shepherd-content {
     margin-top: 16px; }
-    .shepherd-element.shepherd-theme-default.shepherd-element-attached-top.shepherd-element-attached-right.shepherd-target-attached-middle .shepherd-content:before {
+    .docsify-shepherd-element.docsify-shepherd-theme-default.docsify-shepherd-element-attached-top.docsify-shepherd-element-attached-right.docsify-shepherd-target-attached-middle .docsify-shepherd-content:before {
       bottom: 100%;
       right: 16px;
-      border-bottom-color: #f6f6f6; }
-  .shepherd-element.shepherd-theme-default.shepherd-element-attached-bottom.shepherd-element-attached-left.shepherd-target-attached-middle .shepherd-content {
+      border-bottom-color: #f6f6f6;
+      border-top: 0; }
+  .docsify-shepherd-element.docsify-shepherd-theme-default.docsify-shepherd-element-attached-bottom.docsify-shepherd-element-attached-left.docsify-shepherd-target-attached-middle .docsify-shepherd-content {
     margin-bottom: 16px; }
-    .shepherd-element.shepherd-theme-default.shepherd-element-attached-bottom.shepherd-element-attached-left.shepherd-target-attached-middle .shepherd-content:before {
+    .docsify-shepherd-element.docsify-shepherd-theme-default.docsify-shepherd-element-attached-bottom.docsify-shepherd-element-attached-left.docsify-shepherd-target-attached-middle .docsify-shepherd-content:before {
       top: 100%;
       left: 16px;
-      border-top-color: #f6f6f6; }
-  .shepherd-element.shepherd-theme-default.shepherd-element-attached-bottom.shepherd-element-attached-right.shepherd-target-attached-middle .shepherd-content {
+      border-top-color: #f6f6f6;
+      border-bottom: 0; }
+  .docsify-shepherd-element.docsify-shepherd-theme-default.docsify-shepherd-element-attached-bottom.docsify-shepherd-element-attached-right.docsify-shepherd-target-attached-middle .docsify-shepherd-content {
     margin-bottom: 16px; }
-    .shepherd-element.shepherd-theme-default.shepherd-element-attached-bottom.shepherd-element-attached-right.shepherd-target-attached-middle .shepherd-content:before {
+    .docsify-shepherd-element.docsify-shepherd-theme-default.docsify-shepherd-element-attached-bottom.docsify-shepherd-element-attached-right.docsify-shepherd-target-attached-middle .docsify-shepherd-content:before {
       top: 100%;
       right: 16px;
-      border-top-color: #f6f6f6; }
-  .shepherd-element.shepherd-theme-default.shepherd-element-attached-top.shepherd-element-attached-left.shepherd-target-attached-bottom .shepherd-content {
+      border-top-color: #f6f6f6;
+      border-bottom: 0; }
+  .docsify-shepherd-element.docsify-shepherd-theme-default.docsify-shepherd-element-attached-top.docsify-shepherd-element-attached-left.docsify-shepherd-target-attached-bottom .docsify-shepherd-content {
     margin-top: 16px; }
-    .shepherd-element.shepherd-theme-default.shepherd-element-attached-top.shepherd-element-attached-left.shepherd-target-attached-bottom .shepherd-content:before {
+    .docsify-shepherd-element.docsify-shepherd-theme-default.docsify-shepherd-element-attached-top.docsify-shepherd-element-attached-left.docsify-shepherd-target-attached-bottom .docsify-shepherd-content:before {
       bottom: 100%;
       left: 16px;
-      border-bottom-color: #f6f6f6; }
-  .shepherd-element.shepherd-theme-default.shepherd-element-attached-top.shepherd-element-attached-right.shepherd-target-attached-bottom .shepherd-content {
+      border-bottom-color: #f6f6f6;
+      border-top: 0; }
+  .docsify-shepherd-element.docsify-shepherd-theme-default.docsify-shepherd-element-attached-top.docsify-shepherd-element-attached-right.docsify-shepherd-target-attached-bottom .docsify-shepherd-content {
     margin-top: 16px; }
-    .shepherd-element.shepherd-theme-default.shepherd-element-attached-top.shepherd-element-attached-right.shepherd-target-attached-bottom .shepherd-content:before {
+    .docsify-shepherd-element.docsify-shepherd-theme-default.docsify-shepherd-element-attached-top.docsify-shepherd-element-attached-right.docsify-shepherd-target-attached-bottom .docsify-shepherd-content:before {
       bottom: 100%;
       right: 16px;
-      border-bottom-color: #f6f6f6; }
-  .shepherd-element.shepherd-theme-default.shepherd-element-attached-bottom.shepherd-element-attached-left.shepherd-target-attached-top .shepherd-content {
+      border-bottom-color: #f6f6f6;
+      border-top: 0; }
+  .docsify-shepherd-element.docsify-shepherd-theme-default.docsify-shepherd-element-attached-bottom.docsify-shepherd-element-attached-left.docsify-shepherd-target-attached-top .docsify-shepherd-content {
     margin-bottom: 16px; }
-    .shepherd-element.shepherd-theme-default.shepherd-element-attached-bottom.shepherd-element-attached-left.shepherd-target-attached-top .shepherd-content:before {
+    .docsify-shepherd-element.docsify-shepherd-theme-default.docsify-shepherd-element-attached-bottom.docsify-shepherd-element-attached-left.docsify-shepherd-target-attached-top .docsify-shepherd-content:before {
       top: 100%;
       left: 16px;
-      border-top-color: #f6f6f6; }
-  .shepherd-element.shepherd-theme-default.shepherd-element-attached-bottom.shepherd-element-attached-right.shepherd-target-attached-top .shepherd-content {
+      border-top-color: #f6f6f6;
+      border-bottom: 0; }
+  .docsify-shepherd-element.docsify-shepherd-theme-default.docsify-shepherd-element-attached-bottom.docsify-shepherd-element-attached-right.docsify-shepherd-target-attached-top .docsify-shepherd-content {
     margin-bottom: 16px; }
-    .shepherd-element.shepherd-theme-default.shepherd-element-attached-bottom.shepherd-element-attached-right.shepherd-target-attached-top .shepherd-content:before {
+    .docsify-shepherd-element.docsify-shepherd-theme-default.docsify-shepherd-element-attached-bottom.docsify-shepherd-element-attached-right.docsify-shepherd-target-attached-top .docsify-shepherd-content:before {
       top: 100%;
       right: 16px;
-      border-top-color: #f6f6f6; }
-  .shepherd-element.shepherd-theme-default.shepherd-element-attached-top.shepherd-element-attached-right.shepherd-target-attached-left .shepherd-content {
+      border-top-color: #f6f6f6;
+      border-bottom: 0; }
+  .docsify-shepherd-element.docsify-shepherd-theme-default.docsify-shepherd-element-attached-top.docsify-shepherd-element-attached-right.docsify-shepherd-target-attached-left .docsify-shepherd-content {
     margin-right: 16px; }
-    .shepherd-element.shepherd-theme-default.shepherd-element-attached-top.shepherd-element-attached-right.shepherd-target-attached-left .shepherd-content:before {
+    .docsify-shepherd-element.docsify-shepherd-theme-default.docsify-shepherd-element-attached-top.docsify-shepherd-element-attached-right.docsify-shepherd-target-attached-left .docsify-shepherd-content:before {
       top: 16px;
       left: 100%;
-      border-left-color: #f6f6f6; }
-  .shepherd-element.shepherd-theme-default.shepherd-element-attached-top.shepherd-element-attached-left.shepherd-target-attached-right .shepherd-content {
+      border-left-color: #f6f6f6;
+      border-right: 0; }
+  .docsify-shepherd-element.docsify-shepherd-theme-default.docsify-shepherd-element-attached-top.docsify-shepherd-element-attached-left.docsify-shepherd-target-attached-right .docsify-shepherd-content {
     margin-left: 16px; }
-    .shepherd-element.shepherd-theme-default.shepherd-element-attached-top.shepherd-element-attached-left.shepherd-target-attached-right .shepherd-content:before {
+    .docsify-shepherd-element.docsify-shepherd-theme-default.docsify-shepherd-element-attached-top.docsify-shepherd-element-attached-left.docsify-shepherd-target-attached-right .docsify-shepherd-content:before {
       top: 16px;
       right: 100%;
-      border-right-color: #f6f6f6; }
-  .shepherd-element.shepherd-theme-default.shepherd-element-attached-bottom.shepherd-element-attached-right.shepherd-target-attached-left .shepherd-content {
+      border-right-color: #f6f6f6;
+      border-left: 0; }
+  .docsify-shepherd-element.docsify-shepherd-theme-default.docsify-shepherd-element-attached-bottom.docsify-shepherd-element-attached-right.docsify-shepherd-target-attached-left .docsify-shepherd-content {
     margin-right: 16px; }
-    .shepherd-element.shepherd-theme-default.shepherd-element-attached-bottom.shepherd-element-attached-right.shepherd-target-attached-left .shepherd-content:before {
+    .docsify-shepherd-element.docsify-shepherd-theme-default.docsify-shepherd-element-attached-bottom.docsify-shepherd-element-attached-right.docsify-shepherd-target-attached-left .docsify-shepherd-content:before {
       bottom: 16px;
       left: 100%;
-      border-left-color: #f6f6f6; }
-  .shepherd-element.shepherd-theme-default.shepherd-element-attached-bottom.shepherd-element-attached-left.shepherd-target-attached-right .shepherd-content {
+      border-left-color: #f6f6f6;
+      border-right: 0; }
+  .docsify-shepherd-element.docsify-shepherd-theme-default.docsify-shepherd-element-attached-bottom.docsify-shepherd-element-attached-left.docsify-shepherd-target-attached-right .docsify-shepherd-content {
     margin-left: 16px; }
-    .shepherd-element.shepherd-theme-default.shepherd-element-attached-bottom.shepherd-element-attached-left.shepherd-target-attached-right .shepherd-content:before {
+    .docsify-shepherd-element.docsify-shepherd-theme-default.docsify-shepherd-element-attached-bottom.docsify-shepherd-element-attached-left.docsify-shepherd-target-attached-right .docsify-shepherd-content:before {
       bottom: 16px;
       right: 100%;
-      border-right-color: #f6f6f6; }
+      border-right-color: #f6f6f6;
+      border-left: 0; }
 
-.shepherd-element.shepherd-theme-default {
+.docsify-shepherd-element.docsify-shepherd-theme-default {
   z-index: 9999;
   max-width: 24em;
   font-size: 1em; }
-  .shepherd-element.shepherd-theme-default.shepherd-element-attached-top.shepherd-element-attached-center.shepherd-has-title .shepherd-content:before, .shepherd-element.shepherd-theme-default.shepherd-element-attached-top.shepherd-element-attached-right.shepherd-target-attached-bottom.shepherd-has-title .shepherd-content:before, .shepherd-element.shepherd-theme-default.shepherd-element-attached-top.shepherd-element-attached-left.shepherd-target-attached-bottom.shepherd-has-title .shepherd-content:before {
+  .docsify-shepherd-element.docsify-shepherd-theme-default.docsify-shepherd-element-attached-top.docsify-shepherd-element-attached-center.docsify-shepherd-has-title .docsify-shepherd-content:before, .docsify-shepherd-element.docsify-shepherd-theme-default.docsify-shepherd-element-attached-top.docsify-shepherd-element-attached-right.docsify-shepherd-target-attached-bottom.docsify-shepherd-has-title .docsify-shepherd-content:before, .docsify-shepherd-element.docsify-shepherd-theme-default.docsify-shepherd-element-attached-top.docsify-shepherd-element-attached-left.docsify-shepherd-target-attached-bottom.docsify-shepherd-has-title .docsify-shepherd-content:before {
     border-bottom-color: #e6e6e6; }
-  .shepherd-element.shepherd-theme-default.shepherd-has-title .shepherd-content header {
+  .docsify-shepherd-element.docsify-shepherd-theme-default.docsify-shepherd-has-title .docsify-shepherd-content header {
     background: #e6e6e6;
     padding: 1em; }
-    .shepherd-element.shepherd-theme-default.shepherd-has-title .shepherd-content header a.shepherd-cancel-link {
+    .docsify-shepherd-element.docsify-shepherd-theme-default.docsify-shepherd-has-title .docsify-shepherd-content header a.shepherd-cancel-link {
       padding: 0;
       margin-bottom: 0; }
-  .shepherd-element.shepherd-theme-default.shepherd-has-cancel-link .shepherd-content header h3 {
+  .docsify-shepherd-element.docsify-shepherd-theme-default.docsify-shepherd-has-cancel-link .docsify-shepherd-content header h3 {
     float: left; }
-  .shepherd-element.shepherd-theme-default .shepherd-content {
+  .docsify-shepherd-element.docsify-shepherd-theme-default .docsify-shepherd-content {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.17);
     padding: 0; }
-    .shepherd-element.shepherd-theme-default .shepherd-content * {
+    .docsify-shepherd-element.docsify-shepherd-theme-default .docsify-shepherd-content * {
       font-size: inherit; }
-    .shepherd-element.shepherd-theme-default .shepherd-content header {
+    .docsify-shepherd-element.docsify-shepherd-theme-default .docsify-shepherd-content header {
       *zoom: 1;
       border-radius: 5px 5px 0 0; }
-      .shepherd-element.shepherd-theme-default .shepherd-content header:after {
+      .docsify-shepherd-element.docsify-shepherd-theme-default .docsify-shepherd-content header:after {
         content: "";
         display: table;
         clear: both; }
-      .shepherd-element.shepherd-theme-default .shepherd-content header h3 {
+      .docsify-shepherd-element.docsify-shepherd-theme-default .docsify-shepherd-content header h3 {
         margin: 0;
         line-height: 1;
         font-weight: normal; }
-      .shepherd-element.shepherd-theme-default .shepherd-content header a.shepherd-cancel-link {
+      .docsify-shepherd-element.docsify-shepherd-theme-default .docsify-shepherd-content header a.shepherd-cancel-link {
         float: right;
         text-decoration: none;
         font-size: 1.25em;
@@ -182,27 +198,27 @@
         top: .1em;
         padding: .8em;
         margin-bottom: -.8em; }
-        .shepherd-element.shepherd-theme-default .shepherd-content header a.shepherd-cancel-link:hover {
+        .docsify-shepherd-element.docsify-shepherd-theme-default .docsify-shepherd-content header a.shepherd-cancel-link:hover {
           opacity: 1; }
-    .shepherd-element.shepherd-theme-default .shepherd-content .shepherd-text {
+    .docsify-shepherd-element.docsify-shepherd-theme-default .docsify-shepherd-content .docsify-shepherd-text {
       padding: 1em; }
-      .shepherd-element.shepherd-theme-default .shepherd-content .shepherd-text p {
+      .docsify-shepherd-element.docsify-shepherd-theme-default .docsify-shepherd-content .docsify-shepherd-text p {
         margin: 0 0 .5em 0;
         line-height: 1.3em; }
-        .shepherd-element.shepherd-theme-default .shepherd-content .shepherd-text p:last-child {
+        .docsify-shepherd-element.docsify-shepherd-theme-default .docsify-shepherd-content .docsify-shepherd-text p:last-child {
           margin-bottom: 0; }
-    .shepherd-element.shepherd-theme-default .shepherd-content footer {
+    .docsify-shepherd-element.docsify-shepherd-theme-default .docsify-shepherd-content footer {
       padding: 0 1em 1em; }
-      .shepherd-element.shepherd-theme-default .shepherd-content footer .shepherd-buttons {
+      .docsify-shepherd-element.docsify-shepherd-theme-default .docsify-shepherd-content footer .docsify-shepherd-buttons {
         text-align: right;
         list-style: none;
         padding: 0;
         margin: 0; }
-        .shepherd-element.shepherd-theme-default .shepherd-content footer .shepherd-buttons li {
+        .docsify-shepherd-element.docsify-shepherd-theme-default .docsify-shepherd-content footer .docsify-shepherd-buttons li {
           display: inline;
           padding: 0;
           margin: 0; }
-          .shepherd-element.shepherd-theme-default .shepherd-content footer .shepherd-buttons li .shepherd-button {
+          .docsify-shepherd-element.docsify-shepherd-theme-default .docsify-shepherd-content footer .docsify-shepherd-buttons li .shepherd-button {
             display: inline-block;
             vertical-align: middle;
             *vertical-align: auto;
@@ -220,13 +236,13 @@
             padding: .75em 2em;
             background: #3288e6;
             color: #fff; }
-            .shepherd-element.shepherd-theme-default .shepherd-content footer .shepherd-buttons li .shepherd-button.shepherd-button-secondary {
+            .docsify-shepherd-element.docsify-shepherd-theme-default .docsify-shepherd-content footer .docsify-shepherd-buttons li .shepherd-button.shepherd-button-secondary {
               background: #eee;
               color: #888; }
-          .shepherd-element.shepherd-theme-default .shepherd-content footer .shepherd-buttons li:last-child .shepherd-button {
+          .docsify-shepherd-element.docsify-shepherd-theme-default .docsify-shepherd-content footer .docsify-shepherd-buttons li:last-child .shepherd-button {
             margin-right: 0; }
 
-.shepherd-start-tour-button.shepherd-theme-default {
+.docsify-shepherd-start-tour-button.docsify-shepherd-theme-default {
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;

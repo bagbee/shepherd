@@ -45,7 +45,7 @@ render = ->
       text: step.text
       showCancelLink: step.showCancelLink
       attachTo: step.attachToSelector + ' ' + step.attachToDirection
-      classes: "shepherd-element shepherd-theme-#{ options.theme }"
+      classes: "docsify-shepherd-element shepherd-theme-#{ options.theme }"
       scrollTo: options.scrollTo
 
     stepOptions.buttons = []

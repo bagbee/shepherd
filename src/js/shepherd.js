@@ -255,7 +255,7 @@ class Step extends Evented {
     }
 
     const tetherOpts = {
-      classPrefix: 'shepherd',
+      classPrefix: 'docsify-shepherd',
       element: this.el,
       constraints: [{
         to: 'window',
