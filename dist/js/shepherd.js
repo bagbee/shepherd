@@ -326,7 +326,7 @@ var Step = (function (_Evented) {
         this.render();
       }
 
-      addClass(this.el, 'shepherd-open');
+      addClass(this.el, 'docsify-shepherd-open');
 
       document.body.setAttribute('data-shepherd-step', this.id);
 
@@ -345,7 +345,7 @@ var Step = (function (_Evented) {
     value: function hide() {
       this.trigger('before-hide');
 
-      removeClass(this.el, 'shepherd-open');
+      removeClass(this.el, 'docsify-shepherd-open');
 
       document.body.removeAttribute('data-shepherd-step');
 
@@ -359,7 +359,7 @@ var Step = (function (_Evented) {
   }, {
     key: 'isOpen',
     value: function isOpen() {
-      return this.el && hasClass(this.el, 'shepherd-open');
+      return this.el && hasClass(this.el, 'docsify-shepherd-open');
     }
   }, {
     key: 'cancel',
@@ -413,7 +413,7 @@ var Step = (function (_Evented) {
       this.el = createFromHTML('<div class=\'shepherd-step ' + (this.options.classes || '') + '\' data-id=\'' + this.id + '\' ' + (this.options.idAttribute ? 'id="' + this.options.idAttribute + '"' : '') + '></div>');
 
       var content = document.createElement('div');
-      content.className = 'shepherd-content';
+      content.className = 'docsify-shepherd-content';
       this.el.appendChild(content);
 
       var header = document.createElement('header');
@@ -428,14 +428,14 @@ var Step = (function (_Evented) {
         var link = createFromHTML("<a href class='shepherd-cancel-link'>✕</a>");
         header.appendChild(link);
 
-        this.el.className += ' shepherd-has-cancel-link';
+        this.el.className += ' docsify-shepherd-has-cancel-link';
 
         this.bindCancelLink(link);
       }
 
       if (!isUndefined(this.options.text)) {
         (function () {
-          var text = createFromHTML("<div class='shepherd-text'></div>");
+          var text = createFromHTML("<div class='docsify-shepherd-text'></div>");
           var paragraphs = _this5.options.text;
 
           if (typeof paragraphs === 'function') {
@@ -461,7 +461,7 @@ var Step = (function (_Evented) {
       if (this.options.buttons) {
         (function () {
           var footer = document.createElement('footer');
-          var buttons = createFromHTML("<ul class='shepherd-buttons'></ul>");
+          var buttons = createFromHTML("<ul class='docsify-shepherd-buttons'></ul>");
 
           _this5.options.buttons.map(function (cfg) {
             var button = createFromHTML('<li><a class=\'shepherd-button ' + (cfg.classes || '') + '\'>' + cfg.text + '</a>');

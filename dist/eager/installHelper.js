@@ -62,7 +62,7 @@
         text: step.text,
         showCancelLink: step.showCancelLink,
         attachTo: step.attachToSelector + ' ' + step.attachToDirection,
-        classes: "docsify-shepherd-element shepherd-theme-" + options.theme,
+        classes: "docsify-shepherd-element docsify-shepherd-theme-" + options.theme,
         scrollTo: options.scrollTo
       };
       stepOptions.buttons = [];
@@ -128,7 +128,7 @@
       if (options.trigger === 'button-click') {
         buttonLocation = Eager.createElement(options.buttonLocation, buttonLocation);
         button = document.createElement('button');
-        button.className = "shepherd-start-tour-button shepherd-theme-" + options.theme;
+        button.className = "docsify-shepherd-start-tour-button docsify-shepherd-theme-" + options.theme;
         button.appendChild(document.createTextNode(options.buttonText));
         if (buttonLocation) {
           buttonLocation.appendChild(button);

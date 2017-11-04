@@ -291,7 +291,7 @@ class Step extends Evented {
       this.render();
     }
 
-    addClass(this.el, 'shepherd-open');
+    addClass(this.el, 'docsify-shepherd-open');
 
     document.body.setAttribute('data-shepherd-step', this.id);
 
@@ -309,7 +309,7 @@ class Step extends Evented {
   hide() {
     this.trigger('before-hide');
 
-    removeClass(this.el, 'shepherd-open');
+    removeClass(this.el, 'docsify-shepherd-open');
 
     document.body.removeAttribute('data-shepherd-step');
 
@@ -322,7 +322,7 @@ class Step extends Evented {
   }
 
   isOpen() {
-    return this.el && hasClass(this.el, 'shepherd-open');
+    return this.el && hasClass(this.el, 'docsify-shepherd-open');
   }
 
   cancel() {
@@ -367,7 +367,7 @@ class Step extends Evented {
     this.el = createFromHTML(`<div class='shepherd-step ${ this.options.classes || '' }' data-id='${ this.id }' ${ this.options.idAttribute ? 'id="' + this.options.idAttribute + '"' : '' }></div>`);
 
     let content = document.createElement('div');
-    content.className = 'shepherd-content';
+    content.className = 'docsify-shepherd-content';
     this.el.appendChild(content);
 
     let header = document.createElement('header');
@@ -382,13 +382,13 @@ class Step extends Evented {
       const link = createFromHTML("<a href class='shepherd-cancel-link'>✕</a>");
       header.appendChild(link);
 
-      this.el.className += ' shepherd-has-cancel-link';
+      this.el.className += ' docsify-shepherd-has-cancel-link';
 
       this.bindCancelLink(link);
     }
 
     if (!isUndefined(this.options.text)) {
-      const text = createFromHTML("<div class='shepherd-text'></div>");
+      const text = createFromHTML("<div class='docsify-shepherd-text'></div>");
       let paragraphs = this.options.text;
 
       if (typeof paragraphs === 'function') {
@@ -412,7 +412,7 @@ class Step extends Evented {
 
     if (this.options.buttons) {
       const footer = document.createElement('footer');
-      let buttons = createFromHTML("<ul class='shepherd-buttons'></ul>");
+      let buttons = createFromHTML("<ul class='docsify-shepherd-buttons'></ul>");
 
       this.options.buttons.map(cfg => {
         const button = createFromHTML(`<li><a class='shepherd-button ${ cfg.classes || '' }'>${ cfg.text }</a>`);
